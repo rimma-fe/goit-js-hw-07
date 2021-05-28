@@ -1,4 +1,7 @@
 
+ 
+  
+   
   const ingredients = [
     'Картошка',
     'Грибы',
@@ -7,21 +10,12 @@
     'Зелень',
     'Приправы',
   ];
-  
-   
-      const listEl = document.querySelector('#ingredients');
-      console.log(listEl);
-
-      
-    const listItemEl = ingredients.map(ingredient => {
-      const liItemEl = document.CreateElement('li'); 
-        listItemEl.classList.add('ingredients-list__item');
-
-        return liItemEl;
-    });
-    console.log(listItemEl);
-    listEl.append(...listItemEl);
-
+  const ulEL= document.querySelector('#ingredients');
+  ingredients.forEach((value) => {
+      let element = document.createElement('li');
+      element.textContent = value
+      ulEL.appendChild(element);
+  });
   
       
    
