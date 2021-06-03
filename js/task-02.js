@@ -14,9 +14,9 @@
   ingredients.forEach((value) => {
       let element = document.createElement('li');
       element.textContent = value
-      ulEL.appendChild(element);
+      
   });
-  
+  ulEL.appendChild(element);
       
    
     
